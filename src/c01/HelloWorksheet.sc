@@ -22,3 +22,7 @@ counter = 1  // OK, can change a var
   **/
 val greeting0: String = null
 val greeting1: Any = "Hello"
+
+// You can declare multiple values or variables together
+val xmax,ymax = 100 // Sets xmax and ymax to 100
+var greeting,message:String = null
