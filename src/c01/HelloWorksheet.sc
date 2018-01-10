@@ -26,3 +26,7 @@ val greeting1: Any = "Hello"
 // You can declare multiple values or variables together
 val xmax,ymax = 100 // Sets xmax and ymax to 100
 var greeting,message:String = null
+
+1.toString()
+
+1.to(10)
