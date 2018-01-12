@@ -8,3 +8,10 @@ if(x>0) s= 1 else s= -1
 However,the first from is better because it can used to initialize a val,In the second form,s needs to be a var.
 Scala do not have ternary operator like  x>0?1:-1
  */
+
+
+// Input and Output
+print("Answer: ")
+println(42)
+// yields the same output as
+println("Answer: "+42)
