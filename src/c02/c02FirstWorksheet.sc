@@ -15,3 +15,14 @@ print("Answer: ")
 println(42)
 // yields the same output as
 println("Answer: "+42)
+
+/*
+You can read a line of input from the console with the readLine method of the
+scala.io.StdIn class.
+import scala.io
+import scala.io.StdIn
+val name = StdIn.readLine("Your name: ")
+print("Your age: ")
+val age = StdIn.readInt()
+println(s"Hello,${name}!Next year, you will be ${age +1}.")
+ */
