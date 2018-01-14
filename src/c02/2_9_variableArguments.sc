@@ -13,4 +13,10 @@ val s = sum(1, 4, 8, 16, 25) // yield 54
 // If the sum function is called with one argument,that must be a single integer, not a range
 // of integers.The remedy is to tell the compiler that you want the parameter to be considered an
 // argument sequence.Append: _*, like this:
-val s1 = sum(1 to 5 :_*) // Consider 1 to 5 as an argument sequence
+val s1 = sum(1 to 5: _*) // Consider 1 to 5 as an argument sequence
+
+// This call syntax is need in a recursive definition
+def recursiveSum(args:Int*):Int={
+	if(args.length ==0) 0
+	else args.head + recursiveSum(args.tail:_*)
+}
