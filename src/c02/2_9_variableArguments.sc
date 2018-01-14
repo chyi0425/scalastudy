@@ -16,7 +16,10 @@ val s = sum(1, 4, 8, 16, 25) // yield 54
 val s1 = sum(1 to 5: _*) // Consider 1 to 5 as an argument sequence
 
 // This call syntax is need in a recursive definition
-def recursiveSum(args:Int*):Int={
-	if(args.length ==0) 0
-	else args.head + recursiveSum(args.tail:_*)
+def recursiveSum(args: Int*): Int = {
+	if (args.length == 0) 0
+	else args.head + recursiveSum(args.tail: _*)
 }
+// Here, the head of a sequence is its initial element,and tail is a sequence of all other
+// elements.That's again a Seq,and we have to use :_* to convert it to an argument sequence.
+var s2 = recursiveSum(1 to 5: _*)
