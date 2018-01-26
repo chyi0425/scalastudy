@@ -10,20 +10,21 @@ is not so convenient if you rename the class.)
 primary constructor.
 Here is a class with two auxiliary constructors:
  */
-class Person{
-  private var name=""
+class Person {
+  private var name = ""
   private var age = 0
 
-  def this(name:String){ // An auxiliary constructor
-    this()  // Calls primary constructor
+  def this(name: String) { // An auxiliary constructor
+    this() // Calls primary constructor
     this.name = name
   }
 
-  def this(name:String,age:Int){ // Another auxiliary constructor
-    this(name)  // Calls previous auxiliary constructor
+  def this(name: String, age: Int) { // Another auxiliary constructor
+    this(name) // Calls previous auxiliary constructor
     this.age = age
   }
 }
+
 /*
 We will look at the primary constructor in the next section.For now,it is sufficient to know that a
 class for which you don't define a primary constructor has a primary constructor with no arguments.
@@ -31,4 +32,4 @@ You can constructor objects of this class in three ways:
  */
 val p1 = new Person //Primary constructor
 val p2 = new Person("Fred") // First auxiliary constructor
-val p3 = new Person("Fred",42) // Second auxiliary constructor
+val p3 = new Person("Fred", 42) // Second auxiliary constructor
