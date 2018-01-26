@@ -40,7 +40,7 @@ var fred1 = new Person1
 fred1.age = 30
 fred1.age = 21
 println(fred1.age)
-// It may sound scary that Scala generates getterand setter methods for every field.But you have some controll over this process.
+// It may sound scary that Scala generates getter and setter methods for every field.But you have some controll over this process.
 // If the field is private,the getter and setter are private.
 // If the field is a val,only a getter is generated.
 // If you don't want any getter or setter,declare the field as private[this]
